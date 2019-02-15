@@ -1,0 +1,57 @@
+.box {
+    margin 50px;
+    width:100px;
+    height: 100px;
+    background-color: #e86610;
+    transform: translate(100px, 100px);
+    transform: rotate(100deg);
+    transform:skew(50deg);
+}
+
+.img {
+    margin: 50px;
+    height:150px;
+    width: auto;
+    transform: translate(100px, 100px);
+    transition-duration: 2s;
+    
+}
+
+.img:hover {
+    transform:scale(2);
+    
+}
+
+.spinningpig {
+    animation: pigspinn 6s infinite  linear;
+    height: 100px
+}
+
+@keyframes pigspinn {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+a {
+   color: #e86610;
+   font-size:16px;
+   text-decoration: none;
+ 
+}
+.link {
+transition-property: color;
+transition-duration: 1s;
+transition-timing-function: ease-in-out;
+/* shorthand för det är :
+transition color 1s ease-in-out;*/
+}
+
+.link:hover {
+    color: black;
+}
+/*onödigt att göra en klass hade räckt med 
+a..*/
